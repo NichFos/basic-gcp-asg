@@ -1,0 +1,6 @@
+#Ignore all .JSON files
+*.json 
+
+### Terraform ###
+# Ignore all local .terraform directories
+**/.terraform/* 
