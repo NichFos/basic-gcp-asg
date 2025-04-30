@@ -2,5 +2,6 @@
 *.json 
 
 ### Terraform ###
-# Ignore all local .terraform directories
+# Ignore all local .terraform directories and .terraform.lock.hcl
 **/.terraform/* 
+**.terraform.lock.hcl 
