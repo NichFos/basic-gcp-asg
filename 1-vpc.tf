@@ -17,10 +17,36 @@ resource "google_compute_subnetwork" "virginia-private" {
 }
 
 
-resource "google_compute_subnetwork" "us-east4-private" {
+resource "google_compute_subnetwork" "nc-private" {
   name                     = "northcarolina-private"
   ip_cidr_range            = "10.80.35.0/24"
   region                   = "us-east1"
+  network                  = google_compute_network.main.id
+  private_ip_google_access = true
+}
+
+resource "google_compute_subnetwork" "saopaulo1-private" {
+  name                     = "saopaulo1-private"
+  ip_cidr_range            = "10.80.45.0/24"
+  region                   = "southamerica-east1"
+  network                  = google_compute_network.main.id
+  private_ip_google_access = true
+}
+
+
+resource "google_compute_subnetwork" "netherlands1-private" {
+  name                     = "netherlands1-private"
+  ip_cidr_range            = "10.80.55.0/24"
+  region                   = "europe-west1"
+  network                  = google_compute_network.main.id
+  private_ip_google_access = true
+}
+
+
+resource "google_compute_subnetwork" "netherlands2-private" {
+  name                     = "netherlands2-private"
+  ip_cidr_range            = "10.80.60.0/24"
+  region                   = "europe-west1"
   network                  = google_compute_network.main.id
   private_ip_google_access = true
 }
