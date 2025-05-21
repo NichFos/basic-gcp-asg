@@ -7,6 +7,15 @@ resource "google_compute_network" "main" {
   delete_default_routes_on_create = false
 }
 
+
+
+#### THESE ARE THE PRIVATE SUBNETS
+
+
+
+
+
+
 # https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_subnetwork
 resource "google_compute_subnetwork" "virginia-private" {
   name                     = "virginia-private"

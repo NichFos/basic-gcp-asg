@@ -21,3 +21,5 @@ required_providers {
 #   zone  = "us-central1-a"
 #   size  = "10"
 # }
+
+### Grafana disk was commented out because this may be used for Kubernetes classes in the future. 
