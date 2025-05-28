@@ -13,7 +13,7 @@ resource "google_compute_router" "saopaulo-router" {
 
 resource "google_compute_router" "netherlands-router" {
   name    = "netherlands-router"
-  region  = "europe-west1"
+  region  = "europe-west4"
   network = google_compute_network.main.id
 }
 
